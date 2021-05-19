@@ -1,0 +1,38 @@
+.menu {
+    flex-basis: 56%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+		&__item {
+            a {
+                text-decoration: none;
+                font-size: 12px;
+                letter-spacing: 1px;
+                color: $sliderBlack;
+                font-weight: 300;
+                transition: all 500ms ease;
+            }
+            &:hover {
+                a {
+                    font-weight: 600;
+                }
+                
+            }
+
+		}
+        &--link {
+            justify-content: center;
+            a {
+                display: block;
+                margin: 10px 23px;
+                font-size: 19px;
+                letter-spacing: 2px;
+                color: $categColor;
+                font-weight: 600; 
+                border: 1px solid transparent;
+                &:hover {
+                    border-bottom-color: $categColor;
+                }               
+            }  
+        }        
+}

@@ -1,0 +1,49 @@
+.banner {
+    background: #00b7d9 url(../images/categoryBanner.png) left center no-repeat;
+    background-size: cover;
+    padding: 60px 0 40px 0;
+    display: flex;
+    justify-content: flex-end;
+
+    &__info {
+        flex-basis: 510px;
+        text-align: center;
+        margin-right: 150px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 26px;
+        letter-spacing: 3px;
+        line-height: 30px;
+        color: $categColor;
+        font-weight: 600;
+    }
+
+    &__subtitle {
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-size: 14px;
+        letter-spacing: 6px;
+        line-height: 20px;
+        color: $categColor;
+        font-weight: 400;
+    }
+
+    &__button {
+        margin-top: 30px;
+        @include button () {
+            background-color: $white;
+            padding: 25px 0;
+            border-radius: 50px;
+            width: 245px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: $black;
+            font-weight: 400; 
+        }
+        &:hover {
+            background-color: darken($white, 15%);
+        }          
+    }
+}

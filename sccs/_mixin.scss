@@ -1,0 +1,28 @@
+@mixin min-max ($min, $max, $padding){
+    min-width: $min;
+    max-width: $max;
+    margin: 0 auto;
+    padding: 0 $padding;
+    box-sizing: border-box;
+}
+
+@mixin button (){
+    display: inline-block;
+    width: 115px;
+    box-sizing: border-box;
+    background-color: #171717;
+    padding: 15px 0;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 400;
+    transition: all 500ms ease;
+    @content;
+    &:hover {
+        background-color: lighten($sliderBlack, 10%);
+    }
+}
