@@ -1,0 +1,66 @@
+.header {
+    background-color: $white;
+    border-bottom: 5px solid #f3ebdc;
+		&__wrap {
+                  padding: 40px 15px 30px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  flex-wrap: wrap;
+                  }
+		&__icon {
+                  display: flex;
+                  align-items: center;
+            }  
+            &__cart {
+                  width: 16px;
+                  height: 16px;
+            }
+            &__search {
+                  position: relative;
+                  svg {
+                        margin-left: 25px;
+                  }
+                  button {
+                        appearance: none;
+                        background: $white;
+                        border: none;
+                        cursor: pointer;
+                        width: 16px;
+                        height: 15px;
+                        display: none;
+                        position: relative;
+                        z-index: 2;
+                  }
+                  input {
+                        width: 150px;
+                        padding: 5px 40px 5px 10px;
+                        border-radius: 20px;
+                        box-shadow: 0 0 10px 0 $black;
+                        border: none;
+                        font-size: 12px;
+                        position: absolute;
+                        left: -170px;
+                        top: -5px;
+                        opacity: 0;
+                        z-index: -1;
+                        transition: all 500ms ease;
+                  }
+            }
+            &--activ {
+                  svg {
+                        display: none;
+                  }
+                  button {
+                        display: block;
+                        svg {
+                              display: block;
+                              margin-left: 0;
+                        }
+                  }
+                  input {
+                        z-index: 1;
+                        opacity: 1;
+                  }
+            }
+}

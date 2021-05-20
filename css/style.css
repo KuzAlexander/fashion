@@ -101,8 +101,9 @@ p {
   align-items: center;
 }
 
-.header__icon img {
-  cursor: pointer;
+.header__cart {
+  width: 16px;
+  height: 16px;
 }
 
 .header__search {
@@ -533,7 +534,7 @@ p {
 }
 
 .banner {
-  background: #00b7d9 url(../images/categoryBanner.png) left center no-repeat;
+  background: #00b7d9 url(../images/dest/categoryBanner.png) left center no-repeat;
   background-size: cover;
   padding: 60px 0 40px 0;
   display: flex;
@@ -825,7 +826,7 @@ p {
 }
 
 .subscribe .banner {
-  background: #d7dbd5 url(../images/banner2.jpg) left center no-repeat;
+  background: #d7dbd5 url(../images/dest/banner2.jpg) left center no-repeat;
   background-size: cover;
   padding: 50px 0 45px 115px;
   justify-content: flex-start;
