@@ -45,7 +45,7 @@ function styles() {
         .pipe(dest('app/css/'))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
-            overrideBrowderslist: ['last 10 version'],
+            overrideBrowserslist: ['last 10 version'],
         }))
         .pipe(cleancss({
             level: { 1: { specislComments: 0 } },
